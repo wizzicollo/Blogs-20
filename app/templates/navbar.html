@@ -2,10 +2,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<div class="navbar navbar-dark bg-info" style="background-color:#d0e9ee;" role="navigation">
+<div class="navbar navbar-dark bg-info" style="background-color:black;" role="navigation">
   <div class="container">
     <div class="navbar-header">
-       <a class="navbar-brand text-black" href="/" id="logo">Blog-X</a>
+       <a class="navbar-brand text-black" href="/" id="logo" style=" color: blue;">Blog-20 Updates</a>
     </div>
 
     <div class="navbar-collapse collapse">
@@ -13,11 +13,11 @@
 
         <li >{{current_user.username}}</li>
         {% if current_user.is_authenticated %}
-        <li class="nav navbar-nav navbar-left"><a style=" color: black;" href="{{url_for('main.blog')}}">PostBlog</a></li>
-        <li><a href="{{url_for('auth.logout')}}">Sign Out</a></li>
+        <li class="nav navbar-nav navbar-left"><a style=" color: blue;" href="{{url_for('main.blog')}}">PostBlog</a></li>
+        <li><a href="{{url_for('auth.logout')}}" style=" color: blue;">Log Out</a></li>
         {% endif %}
 
-        <li><a href="{{url_for('auth.login')}}">Sign In</a></li>
+        <li><a href="{{url_for('auth.login')}}" style=" color: blue;">Log In</a></li>
 
       </ul>
     </div>
