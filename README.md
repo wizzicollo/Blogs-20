@@ -74,7 +74,7 @@ kiprutohcollo@gmail.com
 
 ## Live Link To Project
 
-
+https://www.blog-20.herokuapp.com/
 
 
 ## License
