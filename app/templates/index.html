@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block content %}
+
+
+<div class="container">
+	<div>
+		<p>{{quotes.quote}}</p>
+
+			<p>
+			    Author:">{{quotes.author}}</span>
+			</p>
+	</div>
+</div>
+<div class="container">
+<div class="row">
+			<div class="col-md-6">
+				
+				{% for blog in blogs %}
+					<div id="row" class="row">
+						
+						<div id="row" class="col-md-12 card" style="background-color:#d0e9ee; font-size:15px; margin-bottom:20px; width: 100%; margin-top: 50px;">
+							<div class="card-header" style="color:#2E86AB">
+								{{blog.blog_title|upper}}
+							</div>
+							<div class="card-body">
+								<p class="card-text">{{blog.blog_content}}</p>
+                <p class="card-text"><span style="font-weight:bolder">Found :</span> <span
+      style="font-family:Bellefair; font-size:18px;">{{ comments | count }} Comments</span></p>
+								<a href="{{url_for('.comment',blog_id = blog.id)}}" class="btn btn-info btn-sm"> COMMENT</a>
+								<a href="{{url_for('.delete',blog_id = blog.id)}}" class="btn btn-warning">DELETE</a>
+                <a href="{{ url_for('.view_comments', blog_id=blog.id) }}" style="font-size:15px;" class="btn btn-primary">Comments</a>							</div>
+            </div>
+					</div>
+				{% endfor %}
+				</div>
+			</div>
+      <style>
+      #row{
+        margin: 20px;
+        padding:20px;
+      }
+      </style>
+{% endblock %}
