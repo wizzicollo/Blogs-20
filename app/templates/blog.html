@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+<div>
+<body ;font-size: 15px; font-family: 'Shadows Into Light', cursive; ">
+
+      
+      <h2 class="text-center" style="margin-top: 30px; margin-bottom: 30px;">POST BLOG</h2>
+      <div class="col-md-4"> </div>
+      <div class="col-md-4" style="">
+  
+        {{wtf.quick_form(blog_form)}}
+  
+      </div>
+      <div class="col-md-4"></div>
+    <!-- </div> -->
+    <!-- </div> -->
+</body>
+</div>
+
+{% endblock%}
