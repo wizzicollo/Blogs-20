@@ -27,6 +27,7 @@ Flask-Bootstrap==3.3.7.1
 Flask-Login==0.5.0
 Flask-Mail==0.9.1
 Flask-Migrate==2.5.3
+flask-requests==0.0.14
 Flask-Script==2.0.6
 Flask-SimpleMDE==0.3.0
 Flask-SQLAlchemy==2.4.1
@@ -56,8 +57,9 @@ mccabe==0.6.1
 netifaces==0.10.4
 oauth==1.0.1
 olefile==0.45.1
+pampy==0.3.0
 pexpect==4.2.1
-Pillow==5.1.0
+Pillow==2.2.1
 pipenv==2018.11.26
 protobuf==3.0.0
 psycopg2==2.8.5
