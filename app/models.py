@@ -17,7 +17,6 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String)
     pass_word = db.Column(db.String)
     blogg = db.relationship('Blogs', backref = 'user', lazy = 'dynamic')
-
     @property
     def password(self):
         raise  AttributeError('You cannot read the password attribute')
