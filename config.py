@@ -6,7 +6,7 @@ class Config:
     '''
     SECRET_KEY= os.environ.get('SECRET_KEY')
     QUOTES_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://collins:qwertyui@localhost/bloggers'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://collins:qwertyui@localhost/bloggers'
 
 class ProdConfig(Config):
     '''
@@ -31,6 +31,8 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
+   SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://collins:qwertyui@localhost/bloggers'
+    
     DEBUG=True
 
 config_options = {
