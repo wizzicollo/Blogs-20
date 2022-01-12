@@ -52,7 +52,7 @@ olefile==0.45.1
 pampy==0.3.0
 pexpect==4.2.1
 Pillow==2.2.1
-pipenv==2018.11.26
+pipenv==2022.1.8
 protobuf==3.0.0
 psycopg2==2.8.5
 pycairo==1.16.2
